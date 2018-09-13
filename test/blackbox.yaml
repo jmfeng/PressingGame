@@ -1,0 +1,67 @@
+#Bug list
+
+#Documentation
+
+-Remote Debugging
+ -Remote Debugging on Android Devices](https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/remote-debugging?hl=en)
+ -Remote Debugging on FireFox- Mobile](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging)
+ -Remote Debugging on Safari - Mobile](https://docs.brightcove.com/en/perform/concepts/mobile-debugging/mobile-debugging.html)
+-Additonal Information
+ -In order to access the hashes call. `graph.vertices`, `graph.edges`, `graph.undo_stack`, and `graph.redo_stack` in the console.
+ -Please refer to this video for additional help.
+
+Feature: name
+ Test: name
+   step: step1
+   step: step2
+   step: step3
+   verification: check1
+   verification: check1
+   verification: check1
+
+Feature: Feature delete a Vertex
+ Test: Vertex delete Test
+   step: Draw a Vertex by clicking the play area.
+	 step: Draw a second Vertex.
+	 step: Highlight the first Vertex by clicking it and then click the second Vertex to connect them with an Edge.
+	 step: Highlight the first Vertex and click it again.
+	 verification: Verify The Vertex graphic is gone.
+	 verification: Verify The connected Edge graphic is gone.
+	 verification: Verify The Vertex does not appear in the Graph.vertices hash.
+	verification: Verify The connected Edge does not appear in the Graph.edges hash.
+Feature: reset
+	Test: reset test
+   step: Populate the graph.
+   step: Press/Click Reset.
+   verification: Verify vertices do not exist in the vertices hash on graph.
+   verification: Verify edges do not exist in the edges hash on graph.
+Feature: undo.
+ Test: Undo test
+   step: Populate a bicolored graph. (Note the names of edges and vertices)
+	 step: Press/Click “U” to revert the previous action.
+	 step: Repeat 1,2 until graph is cleared.
+	 verification: Verify vertex/edge or appearance change is reflected in the code
+Feature: redo.
+ Test: Redo test
+   step: Follow 1-2 from “Feature Undo”.
+	 step: Press/Click “R”.
+	 verification: Verify vertex/edge or appearance change is reflected in the code.
+Feature: color change
+ Test: Color change check 
+	 step: Press/Click the play area. Note the color of the vertex.
+   step: Press/Click “Color”.
+	 step: Press/Click the play area. Note the color of the vertex.
+	 verification: Verify vertex colors are different.
+Feature: play.
+ Test: Play test 
+ 	 step: Create a simple bi-colored graph.
+	 step: Press/Click build.
+	 step: Press/Click the vertices.
+	 verification: Verify Vertex states have changed.
+	 verification: Verify Edges have been removed from edges hash.
+ 
+feaure: name
+	test: name
+		step: gfh
+		step: dfgd
+		verification: hdhjdf

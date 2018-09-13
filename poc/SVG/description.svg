@@ -1,0 +1,10 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 270" preserveAspectRatio="xMinYMin meet" style="position:absolute;">
+	<g id="description_text" fill="#ffffff" font-size="15" font-family="Optima" text-anchor="middle">
+		<text x="235" y="60" font-size="20">SIGNED PERMUTATION SORTING</text>
+		<text x="235" y="100">Theorem (Hannenhalli-Pevzner '99): It is possible to</text>
+		<text x="235" y="120"> find a shortest sequence of reversals to turn any signed </text>
+		<text x="235" y="140"> permutation into any other in polynomial time.</text>
+		<text x="235" y="170"> RULES: </text>
+		<text x="235" y="190"> Press on vertex 1 to see how the graph changes.</text>
+	</g>
+</svg>
